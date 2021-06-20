@@ -8,21 +8,16 @@
 #include "Group.h"
 using namespace std;
 
-
 void comm(int m){
-    if(m<=5) cout<<"You're a DUMBASS!";
-    else if(m>5 && m<=10) cout<<"You have a SHITHEAD!";
-    else if(m>10 && m<=15) cout<<"Please learn some MATHS!";
-    else if(m>15 && m<=20) cout<<"You could do it BETTER!";
-    else if(m>20 && m<=25) cout<<"GOOD. But it's not enough!";
-    else if(m>25 && m<=30) cout<<"GREAT!";
-    else if(m>30 && m<=35) cout<<"Awesome!";
-    else if(m>35 && m<=40) cout<<"You're GENIUS!";
-    else if(m>40 && m<=45) cout<<"I'm IMPRESSED!";
-    else if(m>45 && m<=50) cout<<"Nothing to say, You're BRILLLIANT!";
+    if(m<=5) cout<<"You could do it BETTER!";
+    else if(m>5 && m<=10) cout<<"GOOD. But it's not enough!";
+    else if(m>10 && m<=15) cout<<"GREAT!";
+    else if(m>15 && m<=20) cout<<"Awesome!";
+    else if(m>20 && m<=25) cout<<"You're GENIUS!";
     else cout<<"You're MATHGOD!!!";
 
 }
+
 
 int main()
 {
@@ -39,10 +34,10 @@ int main()
 
     GAME:
     mark=0;
-    cout<<"********************************************\n";
     cout<<"============WELCOME TO MATH GAME============\n";
     cout<<"********************************************\n";
     cout<<"\nSOLVE SIMPLE MATHS\nONE MISTAKE AND YOU'RE DEAD\n\n";
+    cout<<"MAX: 2 Groups. Next update will be increase.";
     cout<<"What group are you in : ";
     cin>>team;
     cout<<"\nHow many members in your group?"<<endl;
@@ -132,6 +127,12 @@ int main()
             cout<<grpname.getGroup()<<" is the winner\n";
             cout<<"Group 1: "<<mark2;
             cout<<"\nGroup 2: "<<mark1;
+        }
+        else
+        {
+            cout<<"\nThe result are draw.";
+            cout<<"Group 1: "<<mark2;
+            cout<<"Group 2: "<<mark1;
         }
     }
     return 0;
